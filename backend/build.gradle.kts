@@ -42,6 +42,9 @@ dependencies {
     implementation("org.postgresql:postgresql:42.7.4")
     implementation("com.zaxxer:HikariCP:6.2.1")
 
+    // PDF extraction
+    implementation("org.apache.pdfbox:pdfbox:3.0.3")
+
     // Config
     implementation("io.github.cdimascio:dotenv-kotlin:6.4.1")
 
