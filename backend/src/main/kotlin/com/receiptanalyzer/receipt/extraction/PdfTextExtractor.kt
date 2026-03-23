@@ -5,7 +5,7 @@ import org.apache.pdfbox.text.PDFTextStripper
 
 class PdfTextExtractor : TextExtractor {
 
-    override fun extract(bytes: ByteArray, mimeType: String): ExtractionResult {
+    override fun extract(bytes: ByteArray, mimeType: MimeType): ExtractionResult {
         val stripper = PDFTextStripper().apply {
             sortByPosition = true
             addMoreFormatting = false

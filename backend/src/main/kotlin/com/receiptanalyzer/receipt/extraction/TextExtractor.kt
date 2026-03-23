@@ -9,5 +9,5 @@ data class ExtractionResult(
 enum class ExtractionMethod { PDF_TEXT, OCR, UNKNOWN }
 
 interface TextExtractor {
-    fun extract(bytes: ByteArray, mimeType: String): ExtractionResult
+    fun extract(bytes: ByteArray, mimeType: MimeType): ExtractionResult
 }

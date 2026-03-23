@@ -15,7 +15,7 @@ class PdfTextExtractorTest {
         val pdfBytes = javaClass.getResourceAsStream("/receipts/receipt_sample.pdf")!!
             .readBytes()
 
-        val result = extractor.extract(pdfBytes, "application/pdf")
+        val result = extractor.extract(pdfBytes, MimeType.Pdf)
 
         assertEquals(ExtractionMethod.PDF_TEXT, result.method)
         assertTrue(result.text.contains("FACTURA B"), "Debe contener el tipo de factura")
@@ -29,7 +29,7 @@ class PdfTextExtractorTest {
     @Test
     fun `detects scanned PDF with no extractable text`() {
         val emptyPdfBytes = createEmptyPdf()
-        val result = extractor.extract(emptyPdfBytes, "application/pdf")
+        val result = extractor.extract(emptyPdfBytes, MimeType.Pdf)
         assertEquals(ExtractionMethod.UNKNOWN, result.method)
     }
 
