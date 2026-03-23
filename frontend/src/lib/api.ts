@@ -1,7 +1,7 @@
 import { PUBLIC_BACKEND_URL } from '$env/static/public';
 import { supabase } from './supabase';
 
-async function makeRequest(path: string, options: RequestInit = {}) {
+const makeRequest = async (path: string, options: RequestInit = {}) => {
 	const { data } = await supabase.auth.getSession();
 	const token = data.session?.access_token;
 	const res = await fetch(`${PUBLIC_BACKEND_URL}${path}`, {
@@ -12,22 +12,16 @@ async function makeRequest(path: string, options: RequestInit = {}) {
 		}
 	});
 	return res.json();
-}
+};
 
-export async function uploadReceipt(file: File) {
+export const uploadReceipt = async (file: File) => {
 	const formData = new FormData();
 	formData.append('file', file);
 	return makeRequest('/api/receipts', { method: 'POST', body: formData });
-}
+};
 
-export async function getReceipts() {
-	return makeRequest('/api/receipts');
-}
+export const getReceipts = async () => makeRequest('/api/receipts');
 
-export async function getReceipt(id: string) {
-	return makeRequest(`/api/receipts/${id}`);
-}
+export const getReceipt = async (id: string) => makeRequest(`/api/receipts/${id}`);
 
-export async function getReceiptStatus(id: string) {
-	return makeRequest(`/api/receipts/${id}/status`);
-}
+export const getReceiptStatus = async (id: string) => makeRequest(`/api/receipts/${id}/status`);
