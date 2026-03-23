@@ -18,7 +18,7 @@ Cada plan es autocontenido y ejecutable de forma independiente. Seguir el orden.
 | 03 | [03-backend-pdf-extraction.md](03-backend-pdf-extraction.md) | Extracción de texto de PDFs con PDFBox | ⬜ Pendiente |
 | 04 | [04-backend-llm-structuring.md](04-backend-llm-structuring.md) | Integración Claude API para estructurar datos | ⬜ Pendiente |
 | 05 | [05-backend-receipt-api.md](05-backend-receipt-api.md) | Endpoints REST para subir y consultar tickets | ⬜ Pendiente |
-| 06 | [06-frontend-scaffold.md](06-frontend-scaffold.md) | Scaffolding SvelteKit + Auth + Tailwind | ⬜ Pendiente |
+| 06 | [06-frontend-scaffold.md](06-frontend-scaffold.md) | Scaffolding SvelteKit + Auth + Tailwind | ✅ Realizado |
 | 07 | [07-frontend-upload-and-detail.md](07-frontend-upload-and-detail.md) | Páginas de upload y detalle de ticket | ⬜ Pendiente |
 | 08 | [08-backend-ocr.md](08-backend-ocr.md) | OCR con Tesseract para tickets en imagen | ⬜ Pendiente |
 | 09 | [09-backend-product-matching.md](09-backend-product-matching.md) | Matching de productos por EAN y fuzzy search | ⬜ Pendiente |
