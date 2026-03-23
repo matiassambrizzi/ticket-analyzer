@@ -13,8 +13,8 @@ Cada plan es autocontenido y ejecutable de forma independiente. Seguir el orden.
 
 | # | Archivo | Descripción | Estado |
 |---|---------|-------------|--------|
-| 01 | [01-supabase-schema.md](01-supabase-schema.md) | Crear proyecto Supabase + schema inicial | ⬜ Pendiente |
-| 02 | [02-backend-scaffold.md](02-backend-scaffold.md) | Scaffolding Kotlin/Ktor con Gradle | ⬜ Pendiente |
+| 01 | [01-supabase-schema.md](01-supabase-schema.md) | Crear proyecto Supabase + schema inicial | ✅ Realizado |
+| 02 | [02-backend-scaffold.md](02-backend-scaffold.md) | Scaffolding Kotlin/Ktor con Gradle | ✅ Realizado |
 | 03 | [03-backend-pdf-extraction.md](03-backend-pdf-extraction.md) | Extracción de texto de PDFs con PDFBox | ⬜ Pendiente |
 | 04 | [04-backend-llm-structuring.md](04-backend-llm-structuring.md) | Integración Claude API para estructurar datos | ⬜ Pendiente |
 | 05 | [05-backend-receipt-api.md](05-backend-receipt-api.md) | Endpoints REST para subir y consultar tickets | ⬜ Pendiente |
